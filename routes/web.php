@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StripePaymentController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('stripe');
 });
 
 Route::controller(StripePaymentController::class)->group(function () {
